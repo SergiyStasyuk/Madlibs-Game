@@ -19,7 +19,7 @@ var nextPrompt = function() {
 	// if there is a next prompt
 	if (currentPrompt < prompts.length) {
 		// put first prompt in all html elements with class 
-		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text" autofocus>');
 		// move the next prompt into variable currentPrompt 
 		currentPrompt = currentPrompt + 1;
 	}
